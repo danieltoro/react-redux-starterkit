@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 // Styles
-import styles from './Home.scss';
+import styles from './Home.less';
 
 class Home extends Component {
   render() {

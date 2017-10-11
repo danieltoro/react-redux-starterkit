@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // Styles
-import styles from './About.scss';
+// import styles from './About.less';
 
 class About extends Component {
   render() {

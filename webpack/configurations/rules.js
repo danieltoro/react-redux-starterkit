@@ -20,7 +20,7 @@ export default type => {
                 modules: false,
                 node: pkg.engines.node,
                 browsers: pkg.browserslist
-            }
+              }
             ]
           ]
         }
@@ -31,22 +31,22 @@ export default type => {
 
   if (!isDevelopment || type === 'server') {
     rules.push({
-      test: /\.scss$/,
+      test: /\.less$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [
           'css-loader?minimize=true&modules=true&localIdentName=[name]__[local]',
-          'sass-loader'
+          'less-loader'
         ]
       })
     });
   } else {
     rules.push({
-      test: /\.scss$/,
+      test: /\.less$/,
       use: [
         'style-loader',
         'css-loader?minimize=true&modules=true&localIdentName=[name]__[local]',
-        'sass-loader'
+        'less-loader'
       ]
     });
   }
