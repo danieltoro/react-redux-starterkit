@@ -20,7 +20,7 @@ export default type => {
                 modules: false,
                 node: pkg.engines.node,
                 browsers: pkg.browserslist
-            }
+              }
             ]
           ]
         }
